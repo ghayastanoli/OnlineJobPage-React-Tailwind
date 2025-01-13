@@ -3,9 +3,9 @@ import React from 'react'
 const Homecard = () => {
   return (
     <>
-    <section className='px-6'>
-        <div className='container-xl lg-container m-auto'>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-8 p-12 px-14 rounded-lg'>
+    <section className='sm:px-6 px-0 max-w-[1350px] w-[100%] m-auto'>
+        <div className='container-xl lg-container m-auto '>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-8 sm:p-12 sm:px-14 p-6 px:6   rounded-lg'>
                 <div className='bg-slate-300 text-black p-6 rounded-xl shadow-lg'>
                     <h2 className='text-2xl pb-3 font-semibold'>For Developers</h2>
                     <h4 className='text-md pb-5 font-medium'>Browse our Developers Jobs and start your career today</h4>

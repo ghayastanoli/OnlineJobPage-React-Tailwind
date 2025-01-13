@@ -20,13 +20,13 @@ const Joblisting = ({job}) => {
             <p className='text-md pb-4 min-h-[88px]  '>{description}</p>
             <button className='text-md text-[#3b5446] pb-4 ' onClick={() => setShowFullDescription ((prevstate) => !prevstate)}>{showFullDescription ? 'Less' : 'More'}</button>
             <h3 className='text-md pb-4 border-b border-gray-300 text-[#3b5446]'>{job.salary} / Year</h3>
-            <div className='flex justify-between items-center pt-4'>
+            <div className='flex flex-col justify-center gap-4 sm:gap-0 sm:justify-between sm:flex-row items-center pt-4'>
             <div className='flex text-md gap-2'>
                 <img src={Icon} alt="" className='h-[24px]'/>
                 <p className='text-orange-600'>{job.location}</p>
             </div>
             <div>
-                <a href={`/job/${job.id}`}><button type='button' className='p-2 rounded text-white text-md bg-[#213038] hover:bg-[#3b5446]'>Read More</button></a>
+                <a href={`/job/${job.id}`}><button type='button' className='p-2 px-9 sm:px-2 rounded text-white text-md bg-[#213038] hover:bg-[#3b5446]'>Read More</button></a>
             </div>
             </div>
             
